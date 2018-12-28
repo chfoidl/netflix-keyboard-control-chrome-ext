@@ -1,0 +1,19 @@
+{
+    "name": "Netflix Keyboard Control",
+    "version": "0.1.0",
+    "description": "Keyboard control for Netflix",
+    "manifest_version": 2,
+    "homepage_url": "https://github.com/chrisxf/netflix-keyboard-control-chrome-ext",
+    "content_scripts": [
+        {
+            "matches": ["https://www.netflix.com/*"],
+            "run_at": "document_end",
+            "js": ["netflix-keyboard-control/dist/netflix-keyboard-control.js"]
+        }
+    ],
+    "icons": {
+        "16": "resources/icon-16.png",
+        "48": "resources/icon-48.png",
+        "128": "resources/icon-128.png"
+    }
+}
