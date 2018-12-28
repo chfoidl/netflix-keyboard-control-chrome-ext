@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "crx": "^3.2.1"
+  },
+  "scripts": {
+      "pack-extension": "mkdir dist && crx pack -o dist/netflix-keyboard-control.crx extension"
+  }
+}
